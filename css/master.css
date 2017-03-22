@@ -1,0 +1,30 @@
+body {
+  background: url("../img/bgimg.jpg") repeat center center fixed;
+}
+
+
+div h2 {
+  text-align: center;
+  font-size: 22pt;
+  font-family: inherit;
+}
+
+hr {
+  border-width: 3px;
+  border-color: #6075f7;
+  width: 80%;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #cbd0ef;
+}
+
+.well {
+  background-color: #cbd0ef;
+}
+
+.panel {
+  background-color: #cbd0ef;
+}

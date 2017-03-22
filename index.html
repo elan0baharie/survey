@@ -15,27 +15,119 @@
       </div>
       <div class="row">
         <div class="col-md-5">
+          <h2>User Info</h2>
           <form id="user_info">
             <div class="form-group">
-              <label>Name:</label>
-              <input id="user_name" class="form-control" type="text">
+              <label for="user_name">Name:</label>
+              <input id="user_name_input" class="form-control" type="text">
+            </div>
+            <div class="well">
+              <div class="radio">
+                <label for="gender">
+                  <input type="radio" name="gender" value="female">Female
+                </label>
+              </div>
+              <div class="radio">
+              <label for="gender">
+                <input type="radio" name="gender" value="male">Male
+              </label>
+              </div>
+              <div class="radio">
+                <label for="gender">
+                  <input type="radio" name="gender" value="other">Other
+                </label>
+                </div>
+              <div class="radio">
+                <label for="gender">
+                  <input type="radio" name="gender" value="not_specify">Choose Not to Specify
+                </label>
+              </div>
             </div>
             <div class="form-group">
-              <label></label>
-              <input>
+              <label for="birthdate">Date of Birth:</label>
+              <input id="birthdate" class="form-control" type="date">
             </div>
+            <div class="form-control" id="space">
+            </div>
+            <button id="submit_info" type="button" class="btn-default">Enter Info</button>
           </form>
         </div>
         <div class="col-md-7">
-
-
-
-
-
-
-
-
-
+          <div class="panel">
+            <div class="panel-title">
+              <h2>Media Survey</h2>
+            </div>
+            <div class="panel-body">
+              <form id="media_survey">
+                <div>
+                  <h3>Rank your favorite genres by preference</h3>
+                  <select class="form-control" id="genre1">
+                    <option value="1">Action</option>
+                    <option value="2">Horror</option>
+                    <option value="3">SciFi/Fantasy</option>
+                    <option value="4">Romantic</option>
+                    <option value="5">Comedy</option>
+                    <option value="6">Drama</option>
+                    <option value="7">Documentary</option>
+                  </select>
+                </div>
+                <hr>
+                <div>
+                  <select class="form-control" id="genre2">
+                    <option value="1">Action</option>
+                    <option value="2">Horror</option>
+                    <option value="3">SciFi/Fantasy</option>
+                    <option value="4">Romantic</option>
+                    <option value="5">Comedy</option>
+                    <option value="6">Drama</option>
+                    <option value="7">Documentary</option>
+                  </select>
+                </div>
+                <hr>
+                <div>
+                  <select class="form-control" id="genre3">
+                    <option value="1">Action</option>
+                    <option value="2">Horror</option>
+                    <option value="3">SciFi/Fantasy</option>
+                    <option value="4">Romantic</option>
+                    <option value="5">Comedy</option>
+                    <option value="6">Drama</option>
+                    <option value="7">Documentary</option>
+                  </select>
+                </div>
+                <hr>
+                <div class="well">
+                  <h4>What was your favorite movie or series in the genres you selected?</h4>
+                  <input id="genre1_movie" type="text">
+                  <input id="genre2_movie" type="text">
+                  <input id="genre3_movie" type="text">
+                </div>
+                <div class="well">
+                  <h4>How much time on average do you watch tv or movies in a week?</h4>
+                  <div class="radio">
+                    <label for="watchtime">
+                      <input type="radio" name="watchtime" value="none-rare">None or less than 40min
+                    </label>
+                  </div>
+                  <div class="radio">
+                  <label for="watchtime">
+                    <input type="radio" name="watchtime" value="3_hours">at least 3 hours or three episode lengths
+                  </label>
+                  </div>
+                  <div class="radio">
+                    <label for="watchtime">
+                      <input type="radio" name="watchtime" value="more">9 hours/
+                    </label>
+                    </div>
+                  <div class="radio">
+                    <label for="watchtime">
+                      <input type="radio" name="watchtime" value="not_specify">I have a serious addiction
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
